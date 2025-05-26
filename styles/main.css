@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    font-family: Arial,;
+    background-image: radial-gradient(#E9E9E9); 
+}
+
+
+.header-inner-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== navbar da nossa pagina ===== */
+.navbar{
+    background-color:#4a525a;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px #3b3b39 ;
+    z-index: 99;
+}
+
+.navbar>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+/* ===== definir a cor da nossa logo ===== */
+.logo{
+    color: #eeeef1;
+}
+/* ===== definir a cor da nossa span metade da logo ===== */
+.logo span{
+    color: #0e0d0d;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.nav-img-container{
+    display: flex;
+    align-items: center;
+}
+
+.nav-img-container img{
+    width: 30px;
+    cursor: pointer;
+}
+.nav-img-container img:first-child{
+    margin-right: 1rem;
+}
+
+/* ===== estilizar nossa lista com os menus ===== */
+nav ul li{
+    color: aliceblue; /* ===== Texto brancos ===== */
+    margin-right: 1.5rem; /* ===== margem a direita com um espaçamento ===== */
+    cursor: pointer;
+}
+/* ===== aqui estamos usando uma animação usando o hover  ===== */
+nav ul li:hover{
+    transform: translate(-5px); /* ===== animação com translate ===== */
+    font-weight: bold; /* ===== para font alterar quando passar o mouse  ===== */
+
+}
+/* ===== colocando uma cor no header  ===== */
+header{
+    background-image: radial-gradient(#fff,#c7c7c7);
+}
+/* ===== fazendo noso icone de menu sumir  ===== */
+.menu-button{
+    display: none;
+}
+.header-bottom-side{
+   display: flex; 
+   align-items: center;
+   justify-self: center;
+   padding:  1rem;
+
+}
+/* ===== estilizando lado esquerdo ===== */
+.header-bottom-side-left{
+    height: 100%;
+    flex-flow: 50%;
+
+}
+/* ===== estilizando lado direito  ===== */
+.header-bottom-side-rigth{  
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ===== estilizando os texto do lado esquerdo  ===== */
+.header-bottom-side-left h2{
+    font-size:3.2rem ;
+    margin: 1.5rem;
+}
+/* ===== estilizando  o paragrafo  ===== */
+.header-bottom-side-left p{
+    line-height: 1.5rem;
+    margin: 1.5rem;
+}
+/* ===== estilizar nosso button  ===== */
+.header-bottom-side-left button{
+    background-color: #0707dd;
+    border: none;
+    cursor: pointer;
+    padding:0.8rem 3.8rem ;
+    border-radius: 9999px;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2;
+    margin:1.5rem ;
+
+}
+/* ===== adicionando uma transição usando houver no nosso button  ===== */
+.header-bottom-side-left button:hover{
+    background-color: #004c94;
+}
+
+/* ===== estilizando a img  ===== */
+.header-bottom-side img{
+    width: 115%;
+
+}
+
+/* Media Queries */
+@media(max-width:800px){
+    .logo{
+        font: size 1.2rem;
+    }
+    .menu-button{
+        display: block;
+    }
+    /*muda a direção do flex*/
+    .header-bottom-side{
+        flex-direction: column; /*deixar em coluna */
+        text-align: center; /*alinhar os texto no centro*/
+        padding-top: 4rem;
+    }
+  
+    nav {
+        position: absolute;
+        background-color:#4a525a;
+        width: 100%;
+        top: 45%;
+        display: none; /* <- mantém oculto */
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 0.8rem;
+    }
+
+    /* ✅ Adicione esta regra */
+    nav.show-menu {
+        display: flex;
+        justify-content: center;
+    }
+    .page-inner-produtos{
+        flex-direction: column;
+    }
+    .page-inner-produtos >div{
+        max-width: 100%;
+    }
+    .paga-inner-listpd-interesses{
+        flex-direction: column;
+    }
+}
+
+/* main content */
+
+.gray-background{
+    background-color:#181E26;
+}
+.page-inner-content{
+    max-width: 1280px;
+    margin: 0   auto ;
+    
+
+}
+.cols{
+    display: grid;
+    padding: 4rem 1rem;
+    justify-content: space-evenly;
+    
+}
+
+/* Estiliza o container com 3 colunas */
+.cols-3 {
+  margin: 0%; 
+  display: grid; /* Usa layout em grade (grid) */
+  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de largura igual (1fr = fração do espaço disponível) */
+  gap: 3rem; /* Espaço entre os itens (horizontal e vertical) */
+  justify-items: center; /* Centraliza horizontalmente o conteúdo de cada célula da grid */
+}
+
+
+
+/* Estiliza todas as imagens dentro do .cols-3 */
+.cols-3 img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho da coluna */
+  height: auto; /* Mantém a proporção da imagem automaticamente */
+}
+
+
+.page-inner-content-produtos-lancamentos{
+    text-align: center;
+    margin-top: 40px;   
+}
+
+.titulo-pd-lancamentos{
+    text-align: left;
+    font-family:'Roboto Condensed', sans-serif; 
+    color: blue;
+    margin-left: 100px;
+}
+
+
+/*produtos novos e lançamentos */
+.page-inner-produtos{
+    margin:  70px; ;
+    display: flex; /* deixa as imagens um ao lado da outra*/
+    gap: 380px; /* espaçamento entre as imagens */
+    
+    
+}
+.page-inner-produtos img{
+    width: 250px;
+
+}
+
+.preco{
+    color: red; /* muda apenas a cor do valor*/
+}
+
+.button-comprar-produtos{
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #28a745;
+    color: white;
+    box-shadow: 0 4px #1e7e34;
+    cursor: pointer;
+    
+    
+}
+/*Produtos do seu interesse */
+.page-inner-content-pd-interesses{
+    text-align: left;
+
+    
+}
+
+.titulo-pd-interesse{
+    font-family:'Roboto Condensed', sans-serif; 
+    margin-left:100px;
+    color: blue;
+}
+/* lista de produtos do seu interesse */
+.paga-inner-listpd-interesses{
+    margin: 50px;
+    text-align: center;
+    display: flex;
+    gap: 120px;
+  
+
+}
+/* tamanho das imagens que estao dentro da lista de produtos */
+.paga-inner-listpd-interesses img{
+    width: 250px;
+    
+}
+
+.color-background{
+    background-color: #181E26;   
+}
+
+
+
+.video-produto video {
+    width: 100%;
+    height: auto;
+    max-width: 700px; /* define o limite para telas grandes */
+    display: block;
+    margin:  auto;
+    margin-top: 150px;
+}
+
+
+/*para deixar imagem ao lado do video */
+.video-produto{
+    display: flex;
+    text-align: center;
+    color: #E9E9E9;
+    
+}
+
+.content-img{
+    margin: 50px;  
+ 
+}
+
+
+/*conteudo de ofertas imperdiveis */
+.content-ofertas{
+    
+    margin-top: 50px;
+}
+
+.content-ofertas h2{
+    font-family:'Roboto Condensed', sans-serif; 
+    margin-left: 100px;
+    font-weight: 500;
+    color: blue;
+}
+
+.content-list-pd-ofertas{
+    margin: 50px;
+    text-align: center;
+    display: flex;
+    gap: 120px;
+  
+    
+}
+
+.content-list-pd-ofertas img{
+    width: 250px;
+    
+}
+
+
+
+

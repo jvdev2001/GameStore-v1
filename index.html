@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+    <title>Game-store Ecommerce</title>
+</head>
+<body>
+    <!--construção do navbar-->
+    <div class="navbar show-menu">
+        <div class="header-inner-content">
+            <h1 class="logo">GAME<span>STORE</span></h1>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Produtos</li>
+                    <li>sobre</li>
+                    <li>contatos</li>
+                    <li>conta</li>
+                </ul>
+            </nav>
+            <!--construção da logo do sistema-->
+            <div class="nav-img-container">
+                <img src="/images/cart.png">
+                <img src="/images/menu.png" class="menu-button"/>
+            </div>
+        </div>
+    </div>
+      <!--Criando um header para criar outro componente da nossa pagina abaixo 
+      da nossa navbar-->
+    <header>
+        <div class="header--inner-content">
+          <div class="header-bottom-side">  <!--nossa div mae-->
+            <div class="header-bottom-side-left">
+                <h2>Confira o mais novo produto<br> lançado em nossa plataforma</h2>
+                    <p> Desempenho ultra-rápido com SSD de alta velocidade <br>
+                        Experiência imersiva com controle DualSense e feedback háptico <br>
+                         Gráficos incríveis com ray tracing e suporte a 4K/8K <br> 
+                         Retrocompatibilidade para jogar clássicos do PS4 <br> 
+                         Áudio 3D para uma imersão sonora sem igual</p>
+                    <button> Verifique  agora &#8594;</button>
+            </div>
+            <div class="header-bottom-side-rigth">
+                <img src="/images/ps5Logo.png">
+            </div>
+
+          </div>
+        </div>
+    </header>
+
+    <!-- main content ou seja nosos conteudo principal -->
+     <main>
+        <div class="gray-background">
+            <div class="page-inner-content">
+                <div class="cols cols-3">
+                    <img src="/images/products/product-2.png">
+                    <img src="/images/products/product-3.png">
+                    <img src="/images/products/product-1.png">
+                </div>
+            </div>
+        </div> <!-- cor de fundo-->
+        <div class="page-inner-content-produtos-lancamentos">
+               <h2 class="titulo-pd-lancamentos">PRODUTOS NOVOS E LANÇAMENTOS</h2>
+               <div class="page-inner-produtos">
+                    <div class="produto1">
+                        <img src="/images/products/product-4.png">
+                        <h3>Combo Gamer Mouse e Teclado </h3>
+                        <p>Descrição do produto</p>
+                        <div class="preco">R$ 200,00</div>
+                        <button class="button-comprar-produtos">Compre Agora</button>
+                         
+                    </div>
+                    <div class="produto2">
+                        <img src="/images/products/product-5.png">
+                        <h3>Placa de Video MSI GeForce RTX 5070</h3>
+                        <P>Descrição do produto</P>
+                        <div class="preco">R$2.000,00</div>
+                         <button class="button-comprar-produtos">Compre Agora</button>
+                    </div>
+                    <div class="produto3">
+                        <img src="/images/products/product-6.png">
+                        <h3>Controle DualSense Sony PS5</h3>
+                        <p>Descrição do produto</p>
+                        <div class="preco">R$300,00</div>
+                        <button class="button-comprar-produtos">Compre Agora</button>
+
+                    </div>
+               </div>
+        </div>
+
+        <div class="page-inner-content-pd-interesses">
+            <h2 class="titulo-pd-interesse">PODE SER DO SEU INTERESSE</h2>
+            <div class="paga-inner-listpd-interesses">
+                <div class="produto4">
+                    <img src="/images/products/product-7.png">
+                    <h3>Cadeira Gamer</h3>
+                    <p>Descriçao do produto</p>
+                    <div class="preco">R$500,00</div>
+                    <button class="button-comprar-produtos">Compre Agora</button>
+                </div>
+                  <div class="produto5">
+                    <img src="/images/products//product-8.png">
+                    <h3>Cadeira Gamer</h3>
+                    <p>Descriçao do produto</p>
+                    <div class="preco">R$500,00</div>
+                    <button class="button-comprar-produtos">Compre Agora</button>
+                </div>
+                <div class="prduto6">
+                    <img src="/images/products/product-9.png">
+                    <h3>Galaxy s23 Ultra</h3>
+                    <p>Descriçao do produto</p>
+                    <div class="preco">R$4.560,00</div>
+                    <button class="button-comprar-produtos">Compre Agora</button>
+                </div>
+                <div class="produto7">
+                    <img src="/images/products/product-11.png" alt="">
+                    <h3>Xiaomi Redmi A3 64 GB Preto</h3>
+                    <p>Descriçao do produto</p>
+                    <div class="preco">R$780,00</div>
+                    <button class="button-comprar-produtos">Compre Agora</button>
+                </div>
+                <div class="produto8">
+                    <img src="/images/products/product-12.png">
+                    <h3>Microsoft Xbox Series X</h3>
+                    <p>Descrição do produto</p>
+                    <div class="preco">R$2.800,00</div>
+                    <button class="button-comprar-produtos">Compre Agora</button>
+                </div>
+
+            </div>
+        </div>
+    
+     </main>
+     <!-- Video do Produto-->
+     <header>
+        <div class="color-background">
+        <div class="video-produto"> 
+           <video autoplay loop muted controls>
+            <source src="/video/videoplayback (1).mp4">
+           </video>
+           <div class="content-img">
+                <img  id="imagem-produto" src= "/images/prodcutsLancamentos/product-14-ps5.png">
+                <h2>PlayStation®5 Slim Edição Digital </h2>
+                <div class="button-comprar-produtos">Compre Agora</div>     
+           </div>
+        </div>
+        </div>
+     </header><!--Final do conteudo do video-->
+     <!-- conteudo dos produtos em ofertas-->
+     <div class="content-ofertas">
+        <h2>OFERTAS IMPERDIVEIS</h2>
+        <div class="content-list-pd-ofertas">
+            <div class="produto13">
+                <img src="/images/productsGabinetes/Pc-gamer-AMD-Png.png" alt="">
+                <h3>Gabinete Cooler Master Preto</h3>
+                <p>De: R$ 756,00 Por</p>
+                <div class=" preco">R$ 445,00</div>
+            </div>
+            <div class="produto14">
+                <img src="/images/productsGabinetes/PC-gamer-Gabinete-01.png" alt="">
+                <h3>Gabinete Gamermax preto</h3>
+                <p>De: R$ 610,00 Por</p>
+                <div class=" preco">R$ 300,00</div>
+            </div>
+            <div class="produto15">
+                <img src="/images/products/product-15.png" alt="">
+                <h3>Gabinete Gamer Auros Preto</h3>
+                <p>De:R$800,00 Por</p>
+                <div class="preco">R$512,00</div>
+            </div>
+        </div>
+     </div>
+     
+
+   
+    <script src="/javascript/show_menu.js"></script>
+    <script src="/javascript/slideImg.js"></script>
+    
+</body>
+</html>
